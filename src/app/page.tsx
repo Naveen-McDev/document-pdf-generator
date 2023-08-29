@@ -1,7 +1,6 @@
 "use client";
 
 import PDFPrint from "@/component/PDFPrint";
-import Image from "next/image";
 import { useState } from "react";
 
 const initialData = {
@@ -16,10 +15,6 @@ const initialData = {
 
 export default function Home() {
   const [formData, setFormData] = useState(initialData);
-
-  const handleSubmit = () => {
-    console.log(formData);
-  };
 
   return (
     <main>
@@ -103,18 +98,10 @@ export default function Home() {
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
-
-          {/* submit */}
-          <button
-            onClick={handleSubmit}
-            className="bg-green-300 px-5 py-2 rounded-lg"
-          >
-            Generate PDF
-          </button>
         </div>
-      </div>
-      <div className="w-full">
-        <PDFPrint formData={formData} />
+        <div className="w-full">
+          <PDFPrint formData={formData} />
+        </div>
       </div>
     </main>
   );
