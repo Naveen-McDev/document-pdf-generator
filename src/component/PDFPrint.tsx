@@ -40,7 +40,12 @@ export default function PDFPrint({ formData }: any) {
       </div>
       <div className="flex justify-center">
         <button
-          style={{ backgroundColor: "blue", color: "white", marginTop: "20px" }}
+          style={{
+            backgroundColor: "blue",
+            color: "white",
+            marginTop: "20px",
+            padding: "10px 30px",
+          }}
           className="bg-green-300 px-5 py-2 rounded-lg "
           onClick={handlePrint}
         >
