@@ -24,15 +24,16 @@ export default function PDFPrint({ formData }: any) {
         <div ref={componentRef}>
           <h1 className="text-3xl flex justify-center">Intro Script</h1>
           <p>
-            "Hello, everyone. My name is {speakerName}, and I&apos;m delighted
-            to introduce you to {guestName}. {gender === "Male" ? "He" : "She"}{" "}
-            is a seasoned {profession} with {experienceInYears} years of
-            experience in the field. At the age of {age}, {guestName} has
-            demonstrated exceptional expertise and a remarkable dedication.
-            Today, we have the privilege of learning from{" "}
+            &quot;"Hello, everyone. My name is {speakerName}, and I&apos;m
+            delighted to introduce you to {guestName}.{" "}
+            {gender === "Male" ? "He" : "She"} is a seasoned {profession} with{" "}
+            {experienceInYears} years of experience in the field. At the age of{" "}
+            {age}, {guestName} has demonstrated exceptional expertise and a
+            remarkable dedication. Today, we have the privilege of learning from{" "}
             {gender === "Male" ? "He" : "She"} insights and experience. Without
             further ado, I invite {guestName} to share{" "}
             {gender === "Male" ? "He" : "She"} knowledge with us." data:{date}
+            &quot;
           </p>
         </div>
       </div>
